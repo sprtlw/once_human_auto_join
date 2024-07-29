@@ -62,15 +62,15 @@ def main():
 
     counter = 0
 
-    while counter != 30 and keypress_thread.is_alive():
+    while counter < 30 and keypress_thread.is_alive():
         counter = 0
 
-        while find_no_hover(no_hover) is False:
+        while find_no_hover(no_hover) is False and counter < 30:
             find_no_hover(no_hover)
             sleep(1)
             counter += 1
 
-        while find_back(back) is False:
+        while find_back(back) is False and counter < 30:
             find_back(back)
             sleep(1)
             counter += 1
