@@ -62,20 +62,15 @@ def main():
     keypress_thread = tg.Thread(target=check_keypress, daemon=True)
     keypress_thread.start()
 
-    counter = 0
+    while keypress_thread.is_alive():
 
-    while counter < 30 and keypress_thread.is_alive():
-        counter = 0
-
-        while find_no_hover(no_hover) is False and counter < 30:
+        while find_no_hover(no_hover) is False:
             find_no_hover(no_hover)
             sleep(1)
-            counter += 1
 
-        while find_back(back) is False and counter < 30:
+        while find_back(back) is False:
             find_back(back)
             sleep(1)
-            counter += 1
 
     print()
     print("Finished.")
