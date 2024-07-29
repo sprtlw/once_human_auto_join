@@ -48,6 +48,8 @@ def check_keypress():
         if kb.is_pressed('q'):
             break
 
+        sleep(0.1)
+
 
 def main():
     no_hover = 'no_hover.png'
