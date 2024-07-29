@@ -35,6 +35,7 @@ Before running this script, make sure you have Python installed on your system. 
 1. Ensure you are on the main screen of ONCE_HUMAN, and have the required image files in the same directory as the script:
    - `no_hover.png`: An image of the "No Hover" button
    - `back.png`: An image of the "Back" button
+   - Made for 1080p and windowed mode
 
 2. Run the script:
 
