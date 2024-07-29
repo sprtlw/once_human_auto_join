@@ -63,14 +63,19 @@ def main():
     keypress_thread.start()
 
     while keypress_thread.is_alive():
-
-        while find_no_hover(no_hover) is False:
+        counter = 0
+        while find_no_hover(no_hover) is False and counter < 10:
             find_no_hover(no_hover)
             sleep(1)
+            counter += 1
 
-        while find_back(back) is False:
+        counter2 = 0
+        while find_back(back) is False and counter2 < 10:
             find_back(back)
             sleep(1)
+            counter2 += 1
+
+        counter, counter2 = 0, 0
 
     print()
     print("Finished.")
