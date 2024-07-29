@@ -1,4 +1,4 @@
-# Auto-Clicker Script for ONCE_HUMAN
+# Auto-Join Full Server Script for ONCE_HUMAN
 
 This Python script provides an automated method of joining a full server on ONCE_HUMAN. It uses image recognition to locate specific elements on the screen and perform actions accordingly.
 
